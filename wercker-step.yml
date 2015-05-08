@@ -1,0 +1,14 @@
+name: ansible-lint
+version: 0.0.1
+description: A Wercker step that runs ansible-lint against an Ansible playbook
+keywords:
+  - ansible
+  - lint
+properties:
+  playbook:
+    type: string
+    required: true
+  options:
+    type: string
+    required: false
+    default: ""
