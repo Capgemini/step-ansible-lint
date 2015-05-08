@@ -10,7 +10,7 @@ A step to run ansible-lint on an Ansible playbook.
 
 build:
   steps:
-    - tayzlor/ansible-lint:
+    - capgemini/ansible-lint:
         playbook: path/to/playbook.yml
         options: "-t TAGS"
 
