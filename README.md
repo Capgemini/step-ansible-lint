@@ -4,6 +4,20 @@
 
 A step to run ansible-lint on an Ansible playbook.
 
+## Dependencies
+
+This build-step depends on ansible / ansible-lint being installed, if it's missing, the buildstep wil fail. Please install those in your box wercker.yml
+
+You can do this as follows -
+
+```
+build:
+  steps:
+    - pip-install
+        requirements_file: ""
+        packages_list: "ansible ansible-lint"
+```
+
 ## Usage
 
 ```yaml
